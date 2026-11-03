@@ -5,7 +5,7 @@ document.body.appendChild(getSumBtn);
 const getSum = () => {
 //Add your code here
 
-	 const table = document.querySelector("table")
+	 const table = document.getElementsByTagName("table")
         const prices = document.querySelectorAll(".price")
         let total = 0
 	
@@ -22,7 +22,7 @@ const getSum = () => {
         
         tr.append(td1,td2)
         
-        table.appendChild(tr)
+        table[0].appendChild(tr)
   
 };
 
